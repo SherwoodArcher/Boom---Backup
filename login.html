@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Boom - Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <script src="busca.js"></script>
+ 
+
+</head>
+<body>
+
+	<!-- Inicio da Barra de Navegação -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+
+			<!-- Botão para utilizar em resposividade -->
+			<div class="navbar-header">
+				
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#BarraDeNavegacao">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				
+				<!-- Logo do Site -->
+				<a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+				<div class="nomeLogo">Boom</div>
+				
+				<div class="mobile navbar-toggle float-right" style="margin-right: 3.5%;">
+					<div class="desktop-hide linkBranco">
+						<a href="#search"><span class="glyphicon glyphicon-search"></span></a>					
+					</div>
+				</div>
+
+				<div class="mobile navbar-toggle float-right">
+					<div class="desktop-hide linkBranco">
+						<a href="login.html"><span class="glyphicon glyphicon-user"></span></a>						
+					</div>
+				</div>
+
+			</div>
+
+			<div class="collapse navbar-collapse" id="BarraDeNavegacao">
+				<!-- Categorias da Barra de Navegação -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="cultural.html">Partiu Rolê</a></li>
+					<li><a href="cultural.html">Descontração</a></li>
+					<li><a href="cultural.html">Em Movimento</a></li>
+					<li><a href="cultural.html">Na Faixa</a></li>
+					<li><a href="cultural.html">Geek</a></li>
+					<li><a href="cultural.html">Cultural</a></li>
+					<li class="mobile-hide"><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>					
+					<li class="mobile-hide"><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
+				</ul>
+				<!-- Fim das Categorias da Barra de Navegação -->
+            
+		</div>
+		<!-- Fim da Div Container -->
+	</nav>
+	<!-- Fim da Barra de Navegação -->
+
+<div id="search">
+    <div class="close">×</div>
+    <form>
+        <input type="search" value="" placeholder="digite aqui ..." />
+        <button type="submit" class="btn btn-primary">Procurar</button>
+    </form>
+</div>
+
+
+	<!-- Inicio do Counteudo -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="margem10pxTopo">
+				<form action="#" method="post">
+    				<div>
+       					<label for="email">Usuário:</label><br/>
+        				<input type="email" id="email" placeholder="exemplo@exemplo.com.br"required />
+    				</div>
+    				<div>
+       					<label for="senha">Senha:</label><br/>
+        				<input type="password" id="senha" required />
+    				</div>    				
+    				<div class="button"><br/>
+        				<button type="submit">Entrar</button>
+    				</div>
+				</form>
+				
+			</div>				
+		</div>
+	</div>
+
+
+	<!-- Fim do conteudo -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="margem10pxTopo">
+      <p class="text-center text-white">Boom &copy; Bandtec 2017</p>
+    </div>
+  </footer>
+  <!-- Fim Footer -->
+  
+</body>
+
+</html>

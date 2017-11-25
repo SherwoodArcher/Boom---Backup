@@ -1,339 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Website Tutorial</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="custom.css">
- 
-</head>
-<body>
+    <head>
+        <title>Boom - Onde a diversão nao estoura o bolso</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <script src="busca.js"></script>
+        <script src="login.js"></script>
+        <script src="esqueci.js"></script>
 
-	<!-- Inicio da Barra de Navegação -->
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
+    </head>
+    <body>
 
-			<!-- Botão para utilizar em resposividade -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#BarraDeNavegacao">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<!-- Logo do Site -->
-				<a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
-				<div class="nomeLogo">Boom</div>
-			</div>
+        <!-- Inicio da Barra de Navegação -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
 
-			<div class="collapse navbar-collapse" id="BarraDeNavegacao">
-				<!-- Categorias da Barra de Navegação -->
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Partiu Rolê</a></li>
-					<li><a href="#">Descontração</a></li>
-					<li><a href="#">Na Faixa</a></li>
-					<li><a href="#">Em Movimento</a></li>
-					<li><a href="#">Geek</a></li>
-					<li><a href="#">Cultural</a></li>
-				</ul>
-				<!-- Fim das Categorias da Barra de Navegação -->
-			</div>
+                <!-- Botão para utilizar em resposividade -->
+                <div class="navbar-header">
 
-		</div>
-	</nav>
-	<!-- Fim da Barra de Navegação -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#BarraDeNavegacao">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-	<!-- Inicio da Div dos Destaques-->
-	<div class="container-fluid" >
-	
-		<div class="row gutter-10 margem10pxTopo">
-			<!-- Inicio do Slider -->
-			 <div class="col-sm-12 col-md-12 col-lg-8">
-	
-				<div id="sliderDestaques" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#sliderDestaques" data-slide-to="0" class="active"></li>
-						<li data-target="#sliderDestaques" data-slide-to="1"></li>
-						<li data-target="#sliderDestaques" data-slide-to="2"></li>
-					</ol>
+                    <!-- Logo do Site -->
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+                    <div class="nomeLogo">Boom</div>
 
-					<div class="carousel-inner" role="listbox">
-					<!-- Slide Ativo -->
-						<div class="item active">
-							<img src="img/mountains.png">
-						</div>
-					<!-- Fim do Slide Ativo -->
+                    <div class="mobile navbar-toggle float-right" style="margin-right: 3.5%;">
+                        <div class="desktop-hide linkBranco">
+                            <a href="#search"><span class="glyphicon glyphicon-search"></span></a>					
+                        </div>
+                    </div>
 
-					<!-- Slide 2 -->
-						<div class="item">
-							<img src="img/snow.png">
-						</div>
-					<!-- Fim Slide 2 -->
+                    <div class="mobile navbar-toggle float-right">
+                        <div class="desktop-hide linkBranco">
+                            <a href="#login"><span class="glyphicon glyphicon-user"></span></a>						
+                        </div>
+                    </div>
 
-					<!-- Slide 3 -->
-						<div class="item">
-							<img src="img/red.png">
-						</div>
-					<!-- Fim Slide 3 -->
-					</div>
+                </div>
 
-				<!-- Inicio dos Controles do Slider -->
-				<a class="left carousel-control" href="#sliderDestaques" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Anterior</span>
-				</a>
-				<a class="right carousel-control" href="#sliderDestaques" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Próximo</span>
-				</a>			
-				<!-- Fim dos Controles do Slider -->
+                <div class="collapse navbar-collapse" id="BarraDeNavegacao">
+                    <!-- Categorias da Barra de Navegação -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cultural.html">Partiu Rolê</a></li>
+                        <li><a href="cultural.html">Descontração</a></li>
+                        <li><a href="cultural.html">Em Movimento</a></li>
+                        <li><a href="cultural.html">Na Faixa</a></li>
+                        <li><a href="cultural.html">Geek</a></li>
+                        <li><a href="cultural.html">Cultural</a></li>
+                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>					
+                        <li class="mobile-hide"><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                    <!-- Fim das Categorias da Barra de Navegação -->
 
-				</div> 
-			<!-- Fim do Slider -->
-			</div>
-
-			<div class="col-sm-12 col-md-12 col-lg-4">
-					<div class="visualizacaoLateral1 padding10px">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<div class="visualizacaoLateral2 padding10px margem10pxTopo ">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>				
-			</div>
-
-		</div>
-	</div>
-	<!-- Fim da Div dos Destaques -->
+                </div>
+                <!-- Fim da Div Container -->
+        </nav>
 
 
-	<!-- Inicio do Grid das Categorias -->
-			<div class="container-fluid">
-				<div class="row gutter-10 margem10pxTopo">
-					<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
-						
+        <div id="search">
+            <div class="close">×</div>
+            <form>
+                <input type="search" value="" placeholder="digite aqui ..." />
+                <div class="linkBranco">
+                    <a type="submit">procurar</a>
+                </div>
+            </form>
+        </div>
 
-						<!-- Inicio PartiuRole -->
-						<div class="formatacaoTexto efeitoOpacidade partiuRole">
-							partiu rolê
-							<div id="sliderPartiuRole" class="carousel slide" data-ride="carousel">
-								<!-- Inicio Slider -->
-								<div class="carousel-inner" role="listbox">
-								<!-- Slide Ativo -->
-									<div class="item active">
-										<img src="img/01_partiu_role/partiu_role_01.jpg">
-									</div>
-									<!-- Fim do Slide Ativo -->
+        <div id="login">
+            <div class="close">×</div>
+            <form>
+                <div class="login">login</div>
+                <label for="email">usuário:</label>
+                <input type="email" value="" id="email" placeholder="exemplo@exemplo.com.br" required /><br/>
 
-									<!-- Slide 2 -->
-									<div class="item">
-										<img src="img/01_partiu_role/partiu_role_02.jpg">
-									</div>
-									<!-- Fim Slide 2 -->
-
-									<!-- Slide 3 -->
-									<div class="item">
-										<img src="img/01_partiu_role/partiu_role_03.jpg">
-									</div>
-									<!-- Fim Slide 3 -->
-								</div>
-
-							</div> 
-							<!-- Fim do Slider -->
-						</div>
-					</div>
-					<!-- Fim PartiuRole -->
+                <label for="senha">senha:</label><br/>
+                <input type="password" id="senha" required placeholder="********" /><br/>
+                <div class="linkBranco">
+                    <a type="submit">entrar</a><br/><br/>
+                    <a href="cadastrousuario.html">não é cadastrado? cadastre-se aqui!</a><br/><br/>
+                    <a href="#esqueci">esqueceu sua senha? clique aqui</a>
+                </div>
+            </form>
+        </div>
 
 
-					<!-- Inicio Descontracao -->
-					<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
-						<div class="formatacaoTexto efeitoOpacidade descontracao">
-						descontração
+        <div id="esqueci">
+            <div class="close">×</div>
+            <form>
+                <div class="esqueci">esqueci minha senha</div>
+                <label for="email">email:</label>
+                <input type="email" value="" id="email" placeholder="exemplo@exemplo.com.br" required /><br/>
 
-							<div id="sliderDescontracao" class="carousel slide" data-ride="carousel">
-								<!-- Inicio Slider -->
-								<div class="carousel-inner" role="listbox">
-								<!-- Slide Ativo -->
-									<div class="item active">
-										<img src="img/02_descontracao/descontracao_01.jpg">
-									</div>
-									<!-- Fim do Slide Ativo -->
+                <div class="linkBranco">
+                    <a type="submit">reenviar senha</a><br/><br/>
+                </div>
+            </form>
+        </div>        
+        <!-- Fim da Barra de Navegação -->
 
-									<!-- Slide 2 -->
-									<div class="item">
-										<img src="img/02_descontracao/descontracao_02.jpg">
-									</div>
-									<!-- Fim Slide 2 -->
+        <!-- Inicio da Div dos Destaques-->
+        <div class="container-fluid textoPaginaInicial" >
 
-									<!-- Slide 3 -->
-									<div class="item">
-										<img src="img/02_descontracao/descontracao_03.jpg">
-									</div>
-									<!-- Fim Slide 3 -->
-								</div>
+            <div class="row gutter-10 margem10pxTopo">
+                <!-- Inicio do Slider -->
+                <div class="col-sm-12 col-md-12 col-lg-8">
 
-							</div> 
-							<!-- Fim do Slider -->
+                    <div id="sliderDestaques" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#sliderDestaques" data-slide-to="0" class="active"></li>
+                            <li data-target="#sliderDestaques" data-slide-to="1"></li>
+                            <li data-target="#sliderDestaques" data-slide-to="2"></li>
+                        </ol>
 
-						</div>
-					</div>
-					<!-- Fim Descontracao -->
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide Ativo -->
+                            <div class="item active">
+                                <img src="img/mountains.png">
+                            </div>
+                            <!-- Fim do Slide Ativo -->
 
+                            <!-- Slide 2 -->
+                            <div class="item">
+                                <img src="img/snow.png">
+                            </div>
+                            <!-- Fim Slide 2 -->
 
-					<!-- Inicio Em Movimento -->
-					<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
-						<div class="formatacaoTexto efeitoOpacidade emMovimento">
-							em movimento
-							
-							<div id="sliderEmMovimento" class="carousel slide" data-ride="carousel">
-								<!-- Inicio Slider -->
-								<div class="carousel-inner" role="listbox">
-								<!-- Slide Ativo -->
-									<div class="item active">
-										<img src="img/03_em_movimento/em_movimento_01.jpg">
-									</div>
-									<!-- Fim do Slide Ativo -->
+                            <!-- Slide 3 -->
+                            <div class="item">
+                                <img src="img/red.png">
+                            </div>
+                            <!-- Fim Slide 3 -->
+                        </div>
 
-									<!-- Slide 2 -->
-									<div class="item">
-										<img src="img/03_em_movimento/em_movimento_02.jpg">
-									</div>
-									<!-- Fim Slide 2 -->
+                        <!-- Inicio dos Controles do Slider -->
+                        <a class="left carousel-control" href="#sliderDestaques" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="right carousel-control" href="#sliderDestaques" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>			
+                        <!-- Fim dos Controles do Slider -->
 
-									<!-- Slide 3 -->
-									<div class="item">
-										<img src="img/03_em_movimento/em_movimento_03.jpg">
-									</div>
-									<!-- Fim Slide 3 -->
-								</div>
+                    </div> 
+                    <!-- Fim do Slider -->
+                </div>
 
-							</div> 
-							<!-- Fim do Slider -->
+                <!--<div class="col-sm-12 col-md-12 col-lg-4">
 
-						</div>
-					</div>
-					<!-- Fim Em Movimento -->
+                        <div class="">
+                        <h4>Boom - Encontre e compartilhe o melhor da diversão!</h4>
+                        
+                        <p>Mais do que um site sobre opções de diversão, o Boom surgiu de uma vontade de agrupar os mais variados eventos para divertir-se na sua cidade, pagando o preço justo pelas opções que você gosta e procura.</p>
+                        <p>&nbsp;Conectar-se a uma comunidade com mesmos interesses, avaliar as opções selecionadas, compartilhar descobertas, experiências, dicas e divertir-se com uma plataforma colaborativa, com o conhecimento e inteligência de várias pessoas engajadas pelas mesmas paixões e gostos.</p>
+                        <p>&nbsp;A equipe Boom utiliza pessoas e algoritmos para cuidar da curadoria de cada postagem e garantir a qualidade e as melhores oportunidades do que chega para sua comunidade.</p>
+                        <p>&nbsp;A colaboração está no DNA do projeto, o conteúdo da plataforma é feito por todas as pessoas. Ficou sabendo de algum evento? Compartilhe com a gente.</p>
+                        <p>&nbsp;Não se perca mais na rede buscando como se divertir e economizar, as melhores opções estão aqui!</p>
+                
+                        </div>
+                </div>-->
 
-
-					<!-- Inicio Na Faixa -->
-					<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
-						<div class="formatacaoTexto efeitoOpacidade naFaixa">
-						na faixa							
-
-							<div id="sliderNaFaixa" class="carousel slide" data-ride="carousel">
-								<!-- Inicio Slider -->
-								<div class="carousel-inner" role="listbox">
-								<!-- Slide Ativo -->
-									<div class="item active">
-										<img src="img/04_na_faixa/na_faixa_01.jpg">
-									</div>
-									<!-- Fim do Slide Ativo -->
-
-									<!-- Slide 2 -->
-									<div class="item">
-										<img src="img/04_na_faixa/na_faixa_02.jpg">
-									</div>
-									<!-- Fim Slide 2 -->
-
-									<!-- Slide 3 -->
-									<div class="item">
-										<img src="img/04_na_faixa/na_faixa_03.jpg">
-									</div>
-									<!-- Fim Slide 3 -->
-								</div>
-
-							</div> 
-							<!-- Fim do Slider -->
-
-						</div>
-					</div>
-					<!-- Fim Na Faixa -->
+            </div>
+        </div>
+        <!-- Fim da Div dos Destaques -->
 
 
-					<!-- Inicio Geek -->
-					<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
-						<div class="formatacaoTexto efeitoOpacidade geek">
-						geek
-							
-							<div id="sliderGeek" class="carousel slide" data-ride="carousel">
-								<!-- Inicio Slider -->
-								<div class="carousel-inner" role="listbox">
-								<!-- Slide Ativo -->
-									<div class="item active">
-										<img src="img/05_geek/geek_01.jpg">
-									</div>
-									<!-- Fim do Slide Ativo -->
+        <!-- Inicio do Grid das Categorias -->
+        <div class="container-fluid">
+            <div class="row gutter-10">
 
-									<!-- Slide 2 -->
-									<div class="item">
-										<img src="img/05_geek/geek_02.jpg">
-									</div>
-									<!-- Fim Slide 2 -->
+                <!-- Inicio PartiuRole -->
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
+                    <div class="formatacaoTexto efeitoOpacidade partiuRole linkPreto">
 
-									<!-- Slide 3 -->
-									<div class="item">
-										<img src="img/05_geek/geek_03.jpg">
-									</div>
-									<!-- Fim Slide 3 -->
-								</div>
+                        <a href="cultural.html">partiu rolê
 
-							</div> 
-							<!-- Fim do Slider -->
+                            <div class="carousel slide mobile-hide" data-ride="carousel">
+                                <!-- Inicio Slider -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Slide Ativo -->
+                                    <div class="item active">
+                                        <img src="img/01_partiu_role/partiu_role_01.jpg">
+                                    </div>
+                                    <!-- Fim do Slide Ativo -->
 
-						</div>
-					</div>
-					<!-- Fim Geek -->
+                                    <!-- Slide 2 -->
+                                    <div class="item">
+                                        <img src="img/01_partiu_role/partiu_role_02.jpg">
+                                    </div>
+                                    <!-- Fim Slide 2 -->
 
+                                    <!-- Slide 3 -->
+                                    <div class="item">
+                                        <img src="img/01_partiu_role/partiu_role_03.jpg">
+                                    </div>
+                                    <!-- Fim Slide 3 -->
+                                </div>
 
-					<!-- Inicio Cultural -->
-					<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
-						<div class="formatacaoTexto efeitoOpacidade cultural">
-						cultural
-							
-						<div id="sliderCultural" class="carousel slide" data-ride="carousel">
-								<!-- Inicio Slider -->
-								<div class="carousel-inner" role="listbox">
-								<!-- Slide Ativo -->
-									<div class="item active">
-										<img src="img/06_cultural/cultural_01.jpg">
-									</div>
-									<!-- Fim do Slide Ativo -->
+                            </div></a>
+                        <!-- Fim do Slider -->
 
-									<!-- Slide 2 -->
-									<div class="item">
-										<img src="img/06_cultural/cultural_02.jpg">
-									</div>
-									<!-- Fim Slide 2 -->
-
-									<!-- Slide 3 -->
-									<div class="item">
-										<img src="img/06_cultural/cultural_03.jpg">
-									</div>
-									<!-- Fim Slide 3 -->
-								</div>
-
-							</div> 
-							<!-- Fim do Slider -->
-
-						</div>
-					</div>
-					<!-- Fim Cultural -->
+                    </div>
+                </div>
+                <!-- Fim PartiuRole -->
 
 
-				</div>
-			</div>
-	<!-- Fim do Grid das Categorias -->
-</body>
+                <!-- Inicio Descontracao -->
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
+                    <div class="formatacaoTexto efeitoOpacidade descontracao linkPreto">
+
+                        <a href="cultural.html">descontração
+
+                            <div id="sliderDescontracao" class="carousel slide mobile-hide" data-ride="carousel">
+                                <!-- Inicio Slider -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Slide Ativo -->
+                                    <div class="item active">
+                                        <img src="img/02_descontracao/descontracao_01.jpg">
+                                    </div>
+                                    <!-- Fim do Slide Ativo -->
+
+                                    <!-- Slide 2 -->
+                                    <div class="item">
+                                        <img src="img/02_descontracao/descontracao_02.jpg">
+                                    </div>
+                                    <!-- Fim Slide 2 -->
+
+                                    <!-- Slide 3 -->
+                                    <div class="item">
+                                        <img src="img/02_descontracao/descontracao_03.jpg">
+                                    </div>
+                                    <!-- Fim Slide 3 -->
+                                </div>
+
+                            </div></a> 
+                        <!-- Fim do Slider -->
+
+                    </div>
+                </div>
+                <!-- Fim Descontracao -->
+
+
+                <!-- Inicio Em Movimento -->
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
+                    <div class="formatacaoTexto efeitoOpacidade emMovimento linkPreto">
+
+                        <a href="cultural.html">em movimento
+
+                            <div id="sliderEmMovimento" class="carousel slide mobile-hide" data-ride="carousel">
+                                <!-- Inicio Slider -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Slide Ativo -->
+                                    <div class="item active">
+                                        <img src="img/03_em_movimento/em_movimento_01.jpg">
+                                    </div>
+                                    <!-- Fim do Slide Ativo -->
+
+                                    <!-- Slide 2 -->
+                                    <div class="item">
+                                        <img src="img/03_em_movimento/em_movimento_02.jpg">
+                                    </div>
+                                    <!-- Fim Slide 2 -->
+
+                                    <!-- Slide 3 -->
+                                    <div class="item">
+                                        <img src="img/03_em_movimento/em_movimento_03.jpg">
+                                    </div>
+                                    <!-- Fim Slide 3 -->
+                                </div>
+
+                            </div></a>
+                        <!-- Fim do Slider -->
+
+                    </div>
+                </div>
+                <!-- Fim Em Movimento -->
+
+
+                <!-- Inicio Na Faixa -->
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
+                    <div class="formatacaoTexto efeitoOpacidade naFaixa linkPreto">
+
+                        <a href="cultural.html">na faixa							
+
+                            <div id="sliderNaFaixa" class="carousel slide mobile-hide" data-ride="carousel">
+                                <!-- Inicio Slider -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Slide Ativo -->
+                                    <div class="item active">
+                                        <img src="img/04_na_faixa/na_faixa_01.jpg">
+                                    </div>
+                                    <!-- Fim do Slide Ativo -->
+
+                                    <!-- Slide 2 -->
+                                    <div class="item">
+                                        <img src="img/04_na_faixa/na_faixa_02.jpg">
+                                    </div>
+                                    <!-- Fim Slide 2 -->
+
+                                    <!-- Slide 3 -->
+                                    <div class="item">
+                                        <img src="img/04_na_faixa/na_faixa_03.jpg">
+                                    </div>
+                                    <!-- Fim Slide 3 -->
+                                </div>
+
+                            </div></a>
+                        <!-- Fim do Slider -->
+
+                    </div>
+                </div>
+                <!-- Fim Na Faixa -->
+
+
+                <!-- Inicio Geek -->
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
+                    <div class="formatacaoTexto efeitoOpacidade geek linkPreto">
+
+                        <a href="cultural.html">geek
+
+                            <div id="sliderGeek" class="carousel slide mobile-hide" data-ride="carousel">
+                                <!-- Inicio Slider -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Slide Ativo -->
+                                    <div class="item active">
+                                        <img src="img/05_geek/geek_01.jpg">
+                                    </div>
+                                    <!-- Fim do Slide Ativo -->
+
+                                    <!-- Slide 2 -->
+                                    <div class="item">
+                                        <img src="img/05_geek/geek_02.jpg">
+                                    </div>
+                                    <!-- Fim Slide 2 -->
+
+                                    <!-- Slide 3 -->
+                                    <div class="item">
+                                        <img src="img/05_geek/geek_03.jpg">
+                                    </div>
+                                    <!-- Fim Slide 3 -->
+                                </div>
+
+                            </div></a>
+                        <!-- Fim do Slider -->
+
+                    </div>
+                </div>
+                <!-- Fim Geek -->
+
+
+                <!-- Inicio Cultural -->
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
+                    <div class="formatacaoTexto efeitoOpacidade cultural linkPreto">
+
+                        <a href="cultural.html">cultural
+
+                            <div id="sliderCultural" class="carousel slide mobile-hide" data-ride="carousel">
+                                <!-- Inicio Slider -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Slide Ativo -->
+                                    <div class="item active">
+                                        <img src="img/06_cultural/cultural_01.jpg">
+                                    </div>
+                                    <!-- Fim do Slide Ativo -->
+
+                                    <!-- Slide 2 -->
+                                    <div class="item">
+                                        <img src="img/06_cultural/cultural_02.jpg">
+                                    </div>
+                                    <!-- Fim Slide 2 -->
+
+                                    <!-- Slide 3 -->
+                                    <div class="item">
+                                        <img src="img/06_cultural/cultural_03.jpg">
+                                    </div>
+                                    <!-- Fim Slide 3 -->
+                                </div>
+
+                            </div></a>
+                        <!-- Fim do Slider -->
+
+                    </div>
+                </div>
+                <!-- Fim Cultural -->
+
+
+            </div>
+        </div>
+        <!-- Fim do Grid das Categorias -->
+    </body>
 </html>
