@@ -657,6 +657,8 @@ border-color: #000;
 border-radius: 0px;
 }
 
-
+.relative{
+position: relative !important;
+}
 
 /* Fim das Configurações Gerais */
