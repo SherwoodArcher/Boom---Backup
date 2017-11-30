@@ -13,11 +13,44 @@
         <script src="login.js"></script>
         <script src="esqueci.js"></script>
 
+		<!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Secretaria da Educação do Estado de São Paulo" />
+		<meta name="description" content="Boom - Onde você encontra a diversão que você procura, no preço justo e o mais próximo possível" />
+		<meta name="keywords" content="boom, diversão, entretenimento, na faixa" />
+		<meta property="og:url" content="//localhost/Boom/" />
+		<meta property="og:title" content="Boom | Onde a diversão não estoura o bolso" />
+		<meta property="og:description" content="Boom - Onde você encontra a diversão que você procura, no preço justo e o mais próximo possível" />
+		<meta property="og:image" content="//localhost/Boom/img/favicon/favicon-360x360.png" />
+		<link rel="shortcut icon" href="//localhost/Boom/img/favicon/favicon.ico" />
+		<link rel="shortcut icon" href="//localhost/Boom/img/favicon/favicon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="//localhost/Boom/img/favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="//localhost/Boom/img/favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="//localhost/Boom/img/favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="//localhost/Boom/img/favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="//localhost/Boom/img/favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="//localhost/Boom/img/favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="//localhost/Boom/img/favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="//localhost/Boom/img/favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="//localhost/Boom/img/favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="//localhost/Boom/img/favicon/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="//localhost/Boom/img/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="36x36" href="//localhost/Boom/img/favicon/android-icon-36x36.png" />
+		<link rel="icon" type="image/png" sizes="48x48" href="//localhost/Boom/img/favicon/android-icon-48x48.png" />
+		<link rel="icon" type="image/png" sizes="72x72" href="//localhost/Boom/img/favicon/android-icon-72x72.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="//localhost/Boom/img/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="144x144" href="//localhost/Boom/img/favicon/android-icon-144x144.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="//localhost/Boom/img/favicon/android-icon-192x192.png" />
+		<link rel="manifest" href="#" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#000000" />
+
     </head>
     <body>
 
         <!-- Inicio da Barra de Navegação -->
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
 
                 <!-- Botão para utilizar em resposividade -->
@@ -35,13 +68,13 @@
 
                     <div class="mobile navbar-toggle float-right" style="margin-right: 3.5%;">
                         <div class="desktop-hide linkBranco">
-                            <a href="#search"><span class="glyphicon glyphicon-search"></span></a>					
+                            <a href="#search"><span class="glyphicon glyphicon-search"></span></a>                  
                         </div>
                     </div>
 
                     <div class="mobile navbar-toggle float-right">
                         <div class="desktop-hide linkBranco">
-                            <a href="#login"><span class="glyphicon glyphicon-user"></span></a>						
+                            <a href="#login"><span class="glyphicon glyphicon-user"></span></a>                     
                         </div>
                     </div>
 
@@ -56,7 +89,7 @@
                         <li><a href="cultural.html">Na Faixa</a></li>
                         <li><a href="cultural.html">Geek</a></li>
                         <li><a href="cultural.html">Cultural</a></li>
-                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>					
+                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>                    
                         <li class="mobile-hide"><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
                     </ul>
                     <!-- Fim das Categorias da Barra de Navegação -->
@@ -111,9 +144,9 @@
         <!-- Inicio da Div dos Destaques-->
         <div class="container-fluid textoPaginaInicial" >
 
-            <div class="row gutter-10 margem10pxTopo">
+            <div class="row gutter-10">
                 <!-- Inicio do Slider -->
-                <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="col-sm-12 col-md-12 col-lg-8 margem10pxTopo">
 
                     <div id="sliderDestaques" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -150,7 +183,7 @@
                         <a class="right carousel-control" href="#sliderDestaques" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                             <span class="sr-only">Próximo</span>
-                        </a>			
+                        </a>            
                         <!-- Fim dos Controles do Slider -->
 
                     </div> 
@@ -158,20 +191,91 @@
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-4">
-
-                            <div class="panel panel-default">
+                            
                                 <div class="panel-body" style="padding: 0 15px;">
-                                    <div class="row relative" style="position: relative;">
-                                        <div class="col-xs-1" style="position: absolute; height: 100%; width: 65px; background: #f00; color: #fff; padding: 0">
-                                            25 Out
+                                    <div class="row margem10pxTopo " >
+                                        <div class="col-xs-2 col-sm-1 col-lg-2 corPartiuRole formatacaoTexto textCenter linkPreto">
+                                            <a href="post_cultural.html"> 01 Jan
                                         </div>
-                                        <img class="col-xs-1" style="position: absolute; margin: 0; padding: 0; left: 65px; height: 100%; width: auto;" src="img/01_partiu_role/partiu_role_01.jpg" />
-                                        <div class="col-xs-6" style="margin-left: 160px">
-                                            Teste<br/>Linha 2<br/>Linha 3
+                                        <div class="col-xs-4 col-sm-2 col-lg-4">
+                                            <img src="img/calendario/calendario_01.jpg" />
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
+                                            Rock in Rio - Pista Principal</a>                                            
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+
+                                <div class="panel-body" style="padding: 0 15px;">
+                                    <div class="row margem10pxTopo" >
+                                        <div class="col-xs-2 col-sm-1 col-lg-2 corDescontracao formatacaoTexto textCenter linkPreto">
+                                            <a href="post_cultural.html">02 Fev
+                                        </div>
+                                        <div class="col-xs-4 col-sm-2 col-lg-4">
+                                            <img src="img/calendario/calendario_02.jpg" />
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
+                                            Avengers - Infinity War</a>                                          
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="panel-body" style="padding: 0 15px;">
+                                    <div class="row margem10pxTopo" >
+                                        <div class="col-xs-2 col-sm-1 col-lg-2 corEmMovimento formatacaoTexto textCenter linkPreto">
+                                            <a href="post_cultural.html">03 Mar
+                                        </div>
+                                        <div class="col-xs-4 col-sm-2 col-lg-4">
+                                            <img src="img/calendario/calendario_03.jpg" />
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
+                                            Maratona São Silvestre - 42Km</a>                                      
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="panel-body" style="padding: 0 15px;">
+                                    <div class="row margem10pxTopo" >
+                                        <div class="col-xs-2 col-sm-1 col-lg-2 corNaFaixa formatacaoTexto textCenter linkPreto">
+                                            <a href="post_cultural.html">04 Abr
+                                        </div>
+                                        <div class="col-xs-4 col-sm-2 col-lg-4">
+                                            <img src="img/calendario/calendario_04.jpg" />
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
+                                            Como se divertir sem gastar nada</a>                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="panel-body" style="padding: 0 15px;">
+                                    <div class="row margem10pxTopo" >
+                                        <div class="col-xs-2 col-sm-1 col-lg-2 corGeek formatacaoTexto textCenter linkPreto">
+                                            <a href="post_cultural.html">05 Mai
+                                        </div>
+                                        <div class="col-xs-4 col-sm-2 col-lg-4">
+                                            <img src="img/calendario/calendario_05.jpg" />
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
+                                            ComicCon - com 15% de Desconto</a>                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="panel-body" style="padding: 0 15px;">
+                                    <div class="row margem10pxTopo" >
+                                        <div class="col-xs-2 col-sm-1 col-lg-2 corCultural formatacaoTexto textCenter linkPreto">
+                                            <a href="post_cultural.html">06 Jun
+                                        </div>
+                                        <div class="col-xs-4 col-sm-2 col-lg-4">
+                                            <img src="img/calendario/calendario_06.jpg" />
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
+                                            MAM - Museu de Arte Moderna</a>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                             
                 </div>
 
             </div>
@@ -295,7 +399,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
                     <div class="formatacaoTexto efeitoOpacidade naFaixa linkPreto">
 
-                        <a href="cultural.html">na faixa							
+                        <a href="cultural.html">na faixa                            
 
                             <div id="sliderNaFaixa" class="carousel slide mobile-hide" data-ride="carousel">
                                 <!-- Inicio Slider -->

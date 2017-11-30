@@ -1,3 +1,60 @@
+/* Manifesto */
+
+{
+	"name": "Boom | Onde a diversão nao estoura o bolso",
+	"short_name": "Boom | Onde a diversão nao estoura o bolso",
+	"start_url": "http:\/\/localhost\/Boom\/",
+	"dir": "ltr",
+	"lang": "pt-BR",
+	"orientation": "portrait-primary",
+	"display": "standalone",
+	"background_color": "#fff",
+	"theme_color": "#fc0",
+	"description": "Boom - Onde a diversão não estoura o bolso",
+	"icons": [
+		{
+			"src": "http:\/\/localhost\/img\/favicon\/android-icon-36x36.png",
+			"sizes": "36x36",
+			"type": "image\/png",
+			"density": "0.75"
+		},
+		{
+			"src": "http:\/\/localhost\/img\/favicon\/android-icon-48x48.png",
+			"sizes": "48x48",
+			"type": "image\/png",
+			"density": "1.0"
+		},
+		{
+			"src": "http:\/\/localhost\/img\/favicon\/android-icon-72x72.png",
+			"sizes": "72x72",
+			"type": "image\/png",
+			"density": "1.5"
+		},
+		{
+			"src": "http:\/\/localhost\/img\/favicon\/android-icon-96x96.png",
+			"sizes": "96x96",
+			"type": "image\/png",
+			"density": "2.0"
+		},
+		{
+			"src": "http:\/\/localhost\/img\/favicon\/android-icon-144x144.png",
+			"sizes": "144x144",
+			"type": "image\/png",
+			"density": "3.0"
+		},
+		{
+			"src": "http:\/\/localhost\/img\/favicon\/android-icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image\/png",
+			"density": "4.0"
+		}
+	]
+}
+
+
+/* Fim do Manifesto */
+
+
 /*Inicio das animações */
 
 @keyframes descontracao {
@@ -36,7 +93,6 @@
 }
 
 /*Fim das animações */
-
 
 
 /* Inicio da Barra de Navegação */
@@ -105,7 +161,7 @@ display: none !important;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-    z-index: 999;
+    z-index: 9999;
     
     -webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
@@ -175,6 +231,89 @@ display: none !important;
 	font-size: 27px;
 }
 
+
+@media only screen and (max-width: 767px) {
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#search .linkBranco {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+}
+
+
+
 #login {
     position: fixed;
     top: 0px;
@@ -182,7 +321,7 @@ display: none !important;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-    z-index: 999;
+    z-index: 9999;
     
     -webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
@@ -321,6 +460,154 @@ display: none !important;
 }
 
 
+@media only screen and (max-width: 767px) {
+
+#login {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#login.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#login .login {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login input[type="email"] {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login label[for="email"] {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login input[type="password"] {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login label[for="senha"] {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login .linkBranco {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+}
 
 #esqueci {
     position: fixed;
@@ -329,7 +616,7 @@ display: none !important;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
-    z-index: 1000;
+    z-index: 10000;
     
     -webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
@@ -433,6 +720,123 @@ display: none !important;
 	font-size: 27px;
 }
 
+@media only screen and (max-width: 767px) {
+
+#esqueci {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 10000;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#esqueci.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#esqueci .esqueci {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci input[type="email"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci label[for="email"] {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci .linkBranco {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+}
+
+
+
 /* Fim da Barra de navegação */
 
 
@@ -527,7 +931,8 @@ body{
 
 margin:auto;
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-padding:0px !important;
+padding:0px;
+padding-top: 50px;
 }
 
 .float-right{
@@ -552,7 +957,6 @@ padding-left: 5px;
 margin-top: 10px;
 }
 
-
 .padding10px{
 padding: 10px;
 }
@@ -568,6 +972,14 @@ padding-left: 10px;
 
 .padding10pxTopo{
 padding-top: 10px;
+}
+
+.noPadding{
+padding: 0px;
+}
+.padding5pxTopo{
+padding: 0px;
+padding-top: 5px;
 }
 
 .corPadrao{
@@ -633,10 +1045,6 @@ color: #FFFFFF;
 color: #000000;
 }
 
-.noPadding{
-padding: 0px;
-margin: 10 5 5 0;
-}
 
 .thumbnail{
 border-radius: 0px;
@@ -660,5 +1068,23 @@ border-radius: 0px;
 .relative{
 position: relative !important;
 }
+
+
+.calendarioIndex{
+font-family: Myanmar Text, Arial;
+font-size: 20px;
+color: #000000;
+text-shadow: 0 0 1px #555;
+}
+.textCenter{
+text-align: center;
+}
+.textLeft{
+text-align: left;
+}
+.textRight{
+text-align: right;
+}
+
 
 /* Fim das Configurações Gerais */

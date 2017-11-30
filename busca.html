@@ -11,13 +11,13 @@
         <link rel="stylesheet" type="text/css" href="custom.css">
         <script src="busca.js"></script>
         <script src="login.js"></script>
-
+        <script src="esqueci.js"></script>
 
     </head>
     <body>
 
         <!-- Inicio da Barra de Navegação -->
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
 
                 <!-- Botão para utilizar em resposividade -->
@@ -35,13 +35,13 @@
 
                     <div class="mobile navbar-toggle float-right" style="margin-right: 3.5%;">
                         <div class="desktop-hide linkBranco">
-                            <a href="#search"><span class="glyphicon glyphicon-search"></span></a>          
+                            <a href="#search"><span class="glyphicon glyphicon-search"></span></a>                  
                         </div>
                     </div>
 
                     <div class="mobile navbar-toggle float-right">
                         <div class="desktop-hide linkBranco">
-                            <a href="#login"><span class="glyphicon glyphicon-user"></span></a>           
+                            <a href="#login"><span class="glyphicon glyphicon-user"></span></a>                     
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@
                         <li><a href="cultural.html">Na Faixa</a></li>
                         <li><a href="cultural.html">Geek</a></li>
                         <li><a href="cultural.html">Cultural</a></li>
-                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>          
+                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>                    
                         <li class="mobile-hide"><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
                     </ul>
                     <!-- Fim das Categorias da Barra de Navegação -->
@@ -87,10 +87,25 @@
                 <input type="password" id="senha" required placeholder="********" /><br/>
                 <div class="linkBranco">
                     <a type="submit">entrar</a><br/><br/>
-                    <a href="cadastrousuario.html">não é cadastrado? cadastre-se aqui!</a>
+                    <a href="cadastrousuario.html">não é cadastrado? cadastre-se aqui!</a><br/><br/>
+                    <a href="#esqueci">esqueceu sua senha? clique aqui</a>
                 </div>
             </form>
         </div>
+
+
+        <div id="esqueci">
+            <div class="close">×</div>
+            <form>
+                <div class="esqueci">esqueci minha senha</div>
+                <label for="email">email:</label>
+                <input type="email" value="" id="email" placeholder="exemplo@exemplo.com.br" required /><br/>
+
+                <div class="linkBranco">
+                    <a type="submit">reenviar senha</a><br/><br/>
+                </div>
+            </form>
+        </div>        
         <!-- Fim da Barra de Navegação -->
         <!-- Inicio do conteudo -->
         <div>
