@@ -1,6 +1,15 @@
 {
- "name": "App",
- "icons": [
+  "name": "Boom | Onde a diversão nao estoura o bolso",
+  "short_name": "Boom | Onde a diversão nao estoura o bolso",
+  "start_url": "http:\/\/localhost\/Boom\/",
+  "dir": "ltr",
+  "lang": "pt-BR",
+  "orientation": "portrait-primary",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#000",
+  "description": "Boom - Onde a diversão não estoura o bolso",
+  "icons": [
   {
    "src": "\/android-icon-36x36.png",
    "sizes": "36x36",
